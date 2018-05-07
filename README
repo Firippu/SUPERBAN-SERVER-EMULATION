@@ -1,0 +1,31 @@
+
+Important:
+	This guide and repository only contains information and scripts to install the server-side emulation to fully unlock the superban plugin, and does not support nor supply the official web and AMXX files that may be needed to complete the plugin evironment.
+
+Requirements:
+	Dedicated gameserver and webserver with administration access. (Both can be used on the same machine and seperated machines.)
+
+Installation:
+	Put the webserver folder contents within the root of your webserver.
+
+	Re-route the superban domain to your own webserver
+
+		Edit your hosts file with a text edit.
+			Linux:
+				/etc/hosts
+			Windows:
+				\Windows\System32\drivers\etc\hosts
+
+			Put this line into your hosts file. (Change the IP if needed for your configuration.)
+				127.0.0.1 license.superban.net
+
+File Notes:
+	keygen.php can generate acceptable keys used by the official compiled plugin.
+
+	superban.json is fetched by the plugin running on the game server to validate its license.
+					this file will need to be recognized by the web server as a php file,
+						manual configuration may be needed for this.
+
+
+
+
