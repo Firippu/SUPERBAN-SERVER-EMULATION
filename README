@@ -1,3 +1,5 @@
+Description:
+	SuperBan is a proprietary AMXX plugin made by Lukmanov Ildar, protected by keyfile comparison. The official authenication server is defunct as of now.
 
 Important:
 	This guide and repository only contains information and scripts to install the server-side emulation to fully unlock the superban plugin, and does not support nor supply the official web and AMXX files that may be needed to complete the plugin evironment.
