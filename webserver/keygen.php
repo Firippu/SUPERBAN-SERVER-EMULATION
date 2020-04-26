@@ -28,11 +28,7 @@ if(empty($var_hostname)) {
 		0x00000004,0xFFFFFFD5,0xFFFFFFCC,0xFFFFFFE7
 	);
 
-	global $szFinal;
-
-	for($k=0; $k<(32+$iInputLen); $k++) {
-		$szFinal=$szFinal."0";
-	}
+	$szFinal=str_pad("",32+$iInputLen);
 
 	for($i=0; $i<32; $i++) {
 		$szFinal[$i]=chr($Hex[$i]);
