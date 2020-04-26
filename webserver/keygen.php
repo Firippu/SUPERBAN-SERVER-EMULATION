@@ -44,16 +44,9 @@ if(empty($var_hostname)) {
 
 	$szMD5=md5($szFinal);
 
-	printf("Click the link below to download your customized \"superban.id\" file. <br /> Place this file within \"/addons/amxmodx/configs/\"");
-
 	$finaltext=$var_hostname.' :|: '.$szMD5;
-	$customfile=$szMD5.'.'.rand();
-	$file = fopen($customfile, "w");
-	fwrite($file,$finaltext); 
-	fclose($file);
 
-	echo '<br /><br />';
-
-	echo '<a href="'.$customfile.'" download="superban.id">superban.id</a>';
+	echo '<br>Create a text file called superban.id and fill the contents below in it.<br /> Place the file within /addons/amxmodx/configs/';
+	echo '<br><br><br>superban.id<br><textarea rows="1" cols="70">'.$finaltext.'</textarea>';
 }
 ?>
